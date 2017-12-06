@@ -4,7 +4,7 @@ RPG Project
 # Protagnist subclasses
 
   # Archer
-    Special stats:
+    Special stats: Is able to shoot multiple flaming arrows in one go, a number specified by the user class, in order to cause more damage.
     
   # Mage
     Special stats:
