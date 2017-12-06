@@ -14,6 +14,10 @@ public class Protagonist extends Character {
     public String getName() {
         return name;
     }
+    
+    public int getSpecialRand() {
+        return specialRand;
+    }
 
     public void specialize() {
     defense = defense / 2;
