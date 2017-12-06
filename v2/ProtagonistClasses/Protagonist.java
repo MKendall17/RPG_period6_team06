@@ -22,4 +22,9 @@ public class Protagonist extends Character {
     this.defense = 75;
     this.rating = 0.4;
     }
+    
+    public String toString() {
+        super.toString();
+        return "Name:" + name;
+    }
 }
