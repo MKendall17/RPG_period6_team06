@@ -6,7 +6,7 @@ public class Protagonist extends Character {
         health = 250;
         strength = (int)(20 + 45 * Math.random());
         defense = 40;
-        rating = 0.4;
+        attack = 0.4;
     }
 
     public String getName() {
@@ -15,12 +15,12 @@ public class Protagonist extends Character {
 
     public void specialize() {
     defense = defense / 2;
-    rating = rating * 2 ;
+    attack = attack * 2 ;
     }
 
     public void normalize() {
     this.defense = 75;
-    this.rating = 0.4;
+    this.attack = 0.4;
     }
     
     public String toString() {
