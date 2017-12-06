@@ -5,4 +5,8 @@ public class Monster extends Character {
         defense = 40;
         rating = 0.3;
     }
+    
+    public String toString() {
+        super.toString();
+    }
 }
