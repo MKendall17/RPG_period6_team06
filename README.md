@@ -7,18 +7,18 @@ RPG Project
     Special stats: Is able to shoot multiple flaming arrows in one go, a number specified by the user class, in order to cause more damage.
     
   # Mage
-    Special stats:
+    Special stats: Is able to throw potions, a number specified by the user class, in order to cause more damage.
   
   # Warrior
-    Special stats:
+    Special stats: Is able to slice things with a sword, a number specified by the user class, in order to cause more damage.
 
 # Monster subclasses
 
   # Dragon
-    Special stats:
+    Has no special stats that are specified by the user. 
     
   # Goblin
-    Special stats:
+    Has no special stats that are specified by the user.
   
   # Monster
-    Special stats:
+    Has no special stats that are specified by the user.
