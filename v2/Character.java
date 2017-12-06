@@ -2,7 +2,7 @@ public class Character {
   protected int health;
   protected int strength;
   protected int defense;
-  protected double rating;
+  protected double attack;
 
   public boolean isAlive() {
     return health > 0;
@@ -17,7 +17,7 @@ public class Character {
   }
 
   public int attack(Character c) {
-    int damage = (int)(strength * rating - c.getDefense());
+    int damage = (int)(strength * attack - c.getDefense());
     c.lowerHP(damage);
     return damage;
   }
