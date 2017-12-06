@@ -21,4 +21,14 @@ public class Character {
     c.lowerHP(damage);
     return damage;
   }
+  
+  public String toString() {
+    return Stats();
+  }
+  
+  //helper function for the toString method
+  
+  protected String Stats() {
+    return "Stats: " + health + ", " + strength + ", " + getDefense() + ", " + attack;
+  }
 }
