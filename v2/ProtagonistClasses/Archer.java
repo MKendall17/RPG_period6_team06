@@ -1,5 +1,4 @@
 public class Archer extends Protagonist {
-  private 
     public Archer() {
         super(name);
     }
