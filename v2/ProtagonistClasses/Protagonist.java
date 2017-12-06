@@ -1,5 +1,6 @@
 public class Protagonist extends Character {
     protected String name;
+    protected int specialRand;
 
     public Protagonist(String s) {
         name = s;
@@ -7,6 +8,7 @@ public class Protagonist extends Character {
         strength = (int)(20 + 45 * Math.random());
         defense = 40;
         attack = 0.4;
+        specialRand = Math.random()*6;
     }
 
     public String getName() {
