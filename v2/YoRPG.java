@@ -22,7 +22,7 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
-  private int cat; // short for category, or playing class (i.e. mage, archer, warrior)
+  private String cat; // short for category, or playing class (i.e. mage, archer, warrior)
 
   private InputStreamReader isr;
   private BufferedReader in;
