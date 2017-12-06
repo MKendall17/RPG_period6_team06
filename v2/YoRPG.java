@@ -22,6 +22,7 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+  private int cat; // short for category, or playing class (i.e. mage, archer, warrior)
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -60,11 +61,23 @@ public class YoRPG
     s += "\t3: Beowulf hath nothing on me. Bring it on.\n";
     s += "Selection: ";
     System.out.print( s );
-
+          
+    
     try {
 	    difficulty = Integer.parseInt( in.readLine() );
     } catch ( IOException e ) { }
 
+    s = "Choose a class! \n";
+    s += "Mage\n";
+    s += "Warrior\n";
+    s += "Archer\n";
+    System.out.print(s);
+          
+    try {
+	    cat = in.readLine();
+    } catch ( IOException e ) { } 
+              
+          
     s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
     System.out.print( s );
 
@@ -73,11 +86,12 @@ public class YoRPG
     } catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
-
+    if (cat.equals("Mage")) pat = new Mage( name );
+    else if (cat.equals("Warrior")) pat = new Warrior( name );
+    else pat = new Archer( name );
+          
   }//end newGame()
-
-
+        
   /*=============================================
     boolean playTurn -- simulates a round of combat
     pre:  Protagonist pat has been initialized
