@@ -29,6 +29,10 @@ public class Character {
   //helper function for the toString method
   
   protected String Stats() {
-    return "Stats: " + health + ", " + strength + ", " + getDefense() + ", " + attack;
+    return "STATS || " + 
+           "Health:" health + "||" +
+           "Strength:" + strength + "||" + 
+           "Defense:" + getDefense() + "||" + 
+           "Attack:" + attack;
   }
 }
