@@ -1,7 +1,7 @@
 public class Archer extends Protagonist {
   private int flamingArrows;
     
-    public Archer(int numberOfFlamingArrows) {
+    public Archer(int numberOfFlamingArrows, String name) {
         super(name);
         flamingArrows = numberOfFlamingArrows;
     }
