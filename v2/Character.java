@@ -30,7 +30,7 @@ public class Character {
   
   protected String Stats() {
     return "STATS || " + 
-           "Health:" health + "||" +
+           "Health:" + health + "||" +
            "Strength:" + strength + "||" + 
            "Defense:" + getDefense() + "||" + 
            "Attack:" + attack;
