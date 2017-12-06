@@ -1,14 +1,13 @@
 public class Archer extends Protagonist {
-    public Archer() {
+  private int flamingArrows;
+    
+    public Archer(int numberOfFlamingArrows) {
         super(name);
-    }
-  
-    public void normalize() {
-        this.defense = 30;
-        this.attack = 50;
+        flamingArrows = numberOfFlamingArrows;
     }
   
     public String toString() {
       super.toString();
+      return "SPECIAL MOVE: Can toss" + flamingArrows + " flaming arrows in one go";
     }  
 }
