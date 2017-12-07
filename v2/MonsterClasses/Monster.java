@@ -7,6 +7,6 @@ public class Monster extends Character {
     }
     
     public String toString() {
-        super.toString();
+        return super.toString();
     }
 }

@@ -8,7 +8,7 @@ public class Protagonist extends Character {
         strength = (int)(20 + 45 * Math.random());
         defense = 40;
         attack = 0.4;
-        specialRand = Math.random()*6;
+        specialRand = (int) Math.random()*6;
     }
 
     public String getName() {
