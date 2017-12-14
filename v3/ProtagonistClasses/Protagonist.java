@@ -1,4 +1,12 @@
-public class Protagonist extends Character {
+public abstract class Protagonist extends Character {
+
+	/** error message:
+	  * Protagonist.java:1: error: Protagonist is not abstract and does not override abstract method toString() in Protagonist
+	  * public class Protagonist extends Character {
+	  *        ^
+	*/
+
+
     protected String name;
     protected int specialRand;
 
@@ -19,18 +27,9 @@ public class Protagonist extends Character {
         return specialRand;
     }
 
-    public void specialize() {
-    defense = defense / 2;
-    attack = attack * 2 ;
-    }
+    public abstract void specialize();
 
-    public void normalize() {
-    this.defense = 75;
-    this.attack = 0.4;
-    }
+    public abstract void normalize();
     
-    public String toString() {
-        super.toString();
-        return "Name:" + name;
-    }
+    public abstract String toString();
 }

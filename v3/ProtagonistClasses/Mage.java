@@ -8,6 +8,16 @@ public class Mage extends Protagonist {
     }
 
     public String toString() {
-      return super.toString() + "SPECIAL MOVE: Can throw" + potions + " potions in one go";
+      return "SPECIAL MOVE: Can throw" + potions + " potions in one go";
     }  
+
+    public void specialize() {
+    defense = defense / 2;
+    attack = attack * 2 ;
+    }
+
+    public void normalize() {
+    this.defense = 75;
+    this.attack = 0.4;
+    }
 }

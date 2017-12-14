@@ -7,6 +7,23 @@ public class Warrior extends Protagonist {
     }
 
     public String toString() {
-      return super.toString() + "SPECIAL MOVE: Can slice" + swordSlices + " times in one go";
+      return "SPECIAL MOVE: Can slice" + swordSlices + " times in one go";
     }  
+
+    /** Warrior.java:1: error: Warrior is not abstract and does not override abstract method toString() in Protagonist
+	  * public class Warrior extends Protagonist {
+	  *        ^
+	  * 1 error
+	*/
+
+	public void specialize() {
+    defense = defense / 2;
+    attack = attack * 2 ;
+    }
+
+    public void normalize() {
+    this.defense = 75;
+    this.attack = 0.4;
+    }
+
 }
